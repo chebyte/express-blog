@@ -1,11 +1,16 @@
 NODE_ROOT = process.env.NODE_ROOT = __dirname;
 
 require.paths.unshift(NODE_ROOT + "/config");
+require.paths.unshift(NODE_ROOT + "/config/initializers");
 require.paths.unshift(NODE_ROOT + "/app/models");
 require.paths.unshift(NODE_ROOT + "/app/controllers");
 
 var express = require('express');
-//active resource
+//globals
+_ = require('underscore/underscore')._;
+
+
+//express resource
 Resource    = require('express-resource');
 
 //load models
@@ -13,12 +18,7 @@ Post = require('post');
 User = require('user');
 Comment = require('comment');
 
-
-//load db
-var cradle = require('cradle');
-dbConnection = new(cradle.Connection)().database('blog');
-
-
+//app
 var app     = module.exports = express.createServer();
 
 require("environment.js")(express, app);

@@ -8,6 +8,8 @@
     "cradle" : "0.5.5",
     "connect": "1.6.0",
     "activeobject": "0.3.2",
-    "express-resource": "0.2.1"
+    "express-resource": "0.2.1",
+    "underscore"      : "1.1.6",
+    "connect-auth"    : "0.3.0"
   }
 }
