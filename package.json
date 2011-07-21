@@ -1,0 +1,13 @@
+{
+    "name": "blog"
+  , "version": "0.0.1"
+  , "private": true
+  , "dependencies": {
+    "express": "2.4.3",
+    "ejs"    : "0.4.3",
+    "cradle" : "0.5.5",
+    "connect": "1.6.0",
+    "activeobject": "0.3.2",
+    "express-resource": "0.2.1"
+  }
+}
