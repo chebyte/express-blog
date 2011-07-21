@@ -1,5 +1,4 @@
 var couch_environment = {
-  staging: 'https://app556849.heroku:CIBDrcp05fXauu10AtoDGntd@app556849.heroku.cloudant.com',
   development: 'http://127.0.0.1:5984',
   production: process.env.CLOUDANT_URL
 };
